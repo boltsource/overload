@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "name": "overload",
+  "builds": [
+    { "src": "api/**/*.js", "use": "@now/node" }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "/api/index.js" }
+  ],
+  "env": {
+    "COPPER_CRM_API_KEY": "@copper-crm-api-key",
+    "COPPER_CRM_USEREMAIL": "@copper-crm-useremail"
+  }
+}
